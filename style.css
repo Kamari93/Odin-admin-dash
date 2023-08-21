@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "sidebar header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main";
+  /* gap: 10px; */
+}
+
+.sidebar {
+  background: rgb(103, 103, 228);
+  grid-area: sidebar;
+  display: grid;
+  grid-template-rows: 0.25fr 1fr 3fr;
+  gap: 30px;
+  color: white;
+  padding-left: 10px;
+  /* grid-template-areas:
+    "title"
+    "links"
+    "settings"; */
+}
+
+.title-logo {
+  font-size: large;
+}
+
+.title-logo svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  fill: white;
+}
+
+.title-logo,
+.sidebar a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  width: min-content;
+}
+
+.sidebar a svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  fill: white;
+}
+
+/* .main-links,
+.settings {
+  display: grid;
+  gap: 10px;
+} */
+
+/* .main-links a,
+.settings a {
+  color: white;
+  text-decoration: none;
+} */
+
+.title-logo {
+  background: rgb(129, 103, 129);
+}
+
+.main-links {
+  background: rgb(68, 50, 86);
+}
+
+.settings {
+  background: rgb(188, 168, 188);
+}
+
+.header {
+  background: rgb(212, 149, 72);
+  grid-area: header;
+}
+
+.main {
+  background: rgb(122, 158, 122);
+  grid-area: main;
+}
