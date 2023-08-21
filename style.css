@@ -29,10 +29,14 @@ body {
     "title"
     "links"
     "settings"; */
+  /* margin-top: 15px; */
 }
 
 .title-logo {
   font-size: large;
+  background: orange;
+  /* background: rgb(129, 103, 129); */
+  padding-top: 30px;
 }
 
 .title-logo svg {
@@ -59,22 +63,6 @@ body {
   fill: white;
 }
 
-/* .main-links,
-.settings {
-  display: grid;
-  gap: 10px;
-} */
-
-/* .main-links a,
-.settings a {
-  color: white;
-  text-decoration: none;
-} */
-
-.title-logo {
-  background: rgb(129, 103, 129);
-}
-
 .main-links {
   background: rgb(68, 50, 86);
 }
@@ -86,6 +74,82 @@ body {
 .header {
   background: rgb(212, 149, 72);
   grid-area: header;
+  display: grid;
+  grid-template-rows: 0.75fr 1fr;
+}
+
+.head-top {
+  background: olive;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  align-items: center;
+  padding: 0 20px;
+  /* margin-top: -10px; */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  /* padding-left: 5px; */
+}
+
+.search input[type="text"] {
+  border: none;
+  outline: none;
+  width: 80%;
+  border-radius: 15px;
+  padding: 9px;
+  margin-left: 5px;
+}
+
+.search svg,
+.icons svg {
+  width: 24px;
+  height: 24px;
+  /* margin-right: 10px; */
+  /* fill: white; */
+}
+
+.wave-logo {
+  /* fill: blue; */
+  width: 40px;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(122, 158, 122);
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.head-bottom {
+  background: rgb(104, 104, 72);
+  display: grid;
+  grid-template-columns: 0.25fr 2fr 1fr;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.wave-logo-btm {
+  width: 50px;
+}
+
+.btns-bottom {
+  display: flex;
+}
+
+.btns-bottom button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 10px;
+  background: rgb(81, 81, 163);
+  color: white;
+  border: none;
+  margin-top: 5px;
 }
 
 .main {
