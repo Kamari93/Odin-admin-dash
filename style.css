@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --main-bg-color: rgb(74, 130, 143);
+  --secondery-bg-color: rgb(243, 169, 83);
 }
 
 body {
@@ -14,17 +20,23 @@ body {
     "sidebar main main main"
     "sidebar main main main"
     "sidebar main main main";
-  /* gap: 10px; */
+}
+
+.side {
+  grid-area: sidebar;
+  background: var(--main-bg-color);
 }
 
 .sidebar {
-  background: rgb(46, 46, 215);
-  grid-area: sidebar;
   display: grid;
   grid-template-rows: 0.25fr 1fr 3fr;
   gap: 30px;
   color: white;
   padding-left: 10px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: 50%;
 }
 
 .title-logo {
@@ -33,6 +45,8 @@ body {
   /* background: orange; */
   /* background: rgb(129, 103, 129); */
   padding-top: 15px;
+  /* position: sticky;
+  top: 0; */
 }
 
 .title-logo svg {
@@ -60,11 +74,8 @@ body {
 }
 
 /* .main-links {
-  background: rgb(68, 50, 86);
-}
-
-.settings {
-  background: rgb(188, 168, 188);
+  position: sticky;
+  top: 10;
 } */
 
 .header {
@@ -73,6 +84,10 @@ body {
   display: grid;
   grid-template-rows: 0.75fr 1fr;
   background: white;
+  box-shadow: 0px 15px 10px -15px #111;
+  margin-bottom: 5px;
+  position: sticky;
+  top: 0;
 }
 
 .head-top {
@@ -141,8 +156,7 @@ body {
   padding: 10px;
   border-radius: 15px;
   margin-right: 10px;
-  /* background: rgb(81, 81, 163); */
-  background: rgb(46, 46, 215);
+  background: var(--main-bg-color);
   color: white;
   border: none;
   margin-top: 5px;
@@ -170,13 +184,19 @@ body {
 }
 
 .card {
-  border-left: 8px solid rgb(243, 169, 83);
+  border-left: 8px solid var(--secondery-bg-color);
   min-height: 175px;
   padding: 25px;
   background: white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.card:hover {
+  border-left: 8px solid var(--main-bg-color);
+  border-right: 8px solid var(--main-bg-color);
+  cursor: pointer;
 }
 
 .card p {
@@ -218,6 +238,10 @@ body {
   padding-bottom: 10px;
 }
 
+.content-top h5:hover {
+  cursor: pointer;
+}
+
 .content-top p {
   font-size: small;
   font-weight: 100;
@@ -255,10 +279,21 @@ body {
   margin-left: 10px;
 }
 
+.profile:hover {
+  cursor: pointer;
+}
+
 .user img {
   width: 50px;
   height: auto;
   border-radius: 50%;
+}
+
+.fa:hover {
+  cursor: pointer;
+  border: solid 1px var(--secondery-bg-color);
+  border-radius: 50%;
+  background: var(--secondery-bg-color);
 }
 
 .peace {
