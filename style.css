@@ -41,11 +41,7 @@ body {
 .title-logo {
   font-size: 25px;
   font-weight: 700;
-  /* background: orange; */
-  /* background: rgb(129, 103, 129); */
   padding-top: 15px;
-  /* position: sticky;
-  top: 0; */
 }
 
 .title-logo svg {
@@ -72,13 +68,7 @@ body {
   fill: white;
 }
 
-/* .main-links {
-  position: sticky;
-  top: 10;
-} */
-
 .header {
-  /* background: rgb(212, 149, 72); */
   grid-area: header;
   display: grid;
   grid-template-rows: 0.75fr 1fr;
@@ -90,7 +80,6 @@ body {
 }
 
 .head-top {
-  /* background: olive; */
   display: grid;
   grid-template-columns: 1fr 0.3fr;
   align-items: center;
@@ -135,7 +124,6 @@ body {
 }
 
 .head-bottom {
-  /* background: rgb(104, 104, 72); */
   display: grid;
   grid-template-columns: 0.25fr 2fr 1fr;
   align-items: center;
@@ -163,15 +151,14 @@ body {
 }
 
 .main {
-  /* background: rgb(122, 158, 122); */
   background: rgb(233, 233, 238);
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
-.left-main {
-  /* background: rgb(173, 173, 150); */
+.left-main,
+.right-main {
   padding: 10px;
 }
 .container {
@@ -212,11 +199,6 @@ body {
 .card-icons i {
   margin-right: 20px;
   font-size: 18px;
-}
-
-.right-main {
-  /* background: rgb(228, 228, 172); */
-  padding: 10px;
 }
 
 .top-container {
