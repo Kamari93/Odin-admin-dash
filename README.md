@@ -1,2 +1,3 @@
 # Odin-admin-dash
-A dashboard design for projects 
+
+A dashboard design for showcasing projects
